@@ -1,0 +1,50 @@
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+  &:hover {
+    color: #1890ff;
+  }
+}
+
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 256px;
+  width: calc(100% - 256px);
+  color: #fff;
+  padding: 0 16px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  height: 48px;
+  .nav{
+    height: 48px;
+  }
+  .breadcrumb {
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+.main {
+  margin: 78px 16px 24px 16px;
+  background: #fff;
+}
+
+:global {
+  .base-layout {
+    .ant-menu-item {
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}
